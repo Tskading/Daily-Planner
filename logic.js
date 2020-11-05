@@ -32,4 +32,6 @@ $(this).addClass("present")
   console.log(rowHour);
 });
 
+// Getting text in hour blocks to save to local storage
+
 
