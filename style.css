@@ -1,0 +1,92 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+  }
+  textarea{
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    border-left: 1px solid black;
+    padding: 10px;
+  }
+  .jumbotron {
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    border-radius: 0;
+    border-bottom: 10px solid black;
+  }
+  .curDate {
+    border-radius: 15;
+    background-color: #a2d2ff;
+    width: 165px;
+    height: 60px;
+    text-align: center;
+    padding-top: 1.5%;
+    font-size: 1.5rem;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  .description{
+    white-space: pre-wrap;
+  }
+  .time-block{
+    text-align: center;
+    border-radius: 15px;
+  }
+  .row {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid white;;
+    margin-bottom: 0px;
+    width: 100%;
+    align-items: center;
+  
+  }
+  .hour {
+    background-color: #ffffff;
+    color: #000000;
+    border-top: 1px dashed #000000;
+    text-align: center;
+    align-items: center;
+    height: 80px;
+    width: 60px;
+    position: relative;
+    right: 76px;
+    bottom: 800px;
+  }
+  .past {
+    background-color: #d3d3d3;
+    color: black;
+  }
+  .present {
+    background-color: #bdb2ff;
+    color: white;
+  }
+  .future {
+    background-color: #77dd77;
+    color: white;
+  }
+  .saveBtn {
+    border-top: #000000 2px solid;
+    border-left: 2px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #a2d2ff;
+    color: white;
+    z-index: 2;
+    position:absolute;
+    right: -39px;
+    height: 84px;
+    width: 70px;
+  }
+  .saveBtn i:hover {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+  }
+  .button {
+    border-radius: 12%;
+    background-color: #06AED5;
+    margin-left:100px;
+  }
