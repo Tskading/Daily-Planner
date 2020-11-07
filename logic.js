@@ -12,26 +12,49 @@ $(".curDate").text(today.format("dddd"));
 
 console.log(hour);
 
-
 // this will allow me to change the background color based on the time
 $(".row").each(function(){
  var rowHour = $(this).attr("name"); 
-//  past
+//  adds past class from css
   if (rowHour < hour) {
   $(this).addClass("past");
   }
-// present 
+// adds present class from css
   else if (rowHour == hour) {
-$(this).addClass("present")
+$(this).addClass("present");
   }
-// future
+// adds future class from css
   else {
-  $(this).addClass("future")
+  $(this).addClass("future");
   }
 
-  console.log(rowHour);
+  // console.log(rowHour);
 });
 
-// Getting text in hour blocks to save to local storage
+// Loads locally saved data for row 9
+onload = function() {
 
+  var text9 = localStorage.getItem("#row-9");
+  
+  if (text9 !== null) {
+    $("#row-9").text(text9);
 
+   };
+  }
+
+// Getting text in row 9 to save to local storage
+
+$("#09").on("click", function(event){
+  event.preventDefault();
+
+  var todoItem9 = $("#row-9").val();
+
+  console.log(todoItem9);
+
+  var data9 = JSON.stringify(todoItem9);
+
+  var getData9 = localStorage.setItem("#row-9", data9);
+
+  console.log(data9);
+  
+});
