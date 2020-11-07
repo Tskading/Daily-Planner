@@ -26,14 +26,16 @@
     <title>Work Day Scheduler</title>
   </head>
   <body>
+    <!-- header -->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+    <!-- day element -->
     <div class="container">
-      <div class="curDate"></div>
-      
+      <div class="curDay"></div>
+      <!-- container of paired row and button elements -->
       <div class="flex-container">
         <div class="col mt-2 custom-row">
 
@@ -66,7 +68,7 @@
           
           <button type="button" id="18" class="saveBtn fa fa-lock"></button>
           <textarea placeholder="Type here..." class="row" name="18" id="row-18"></textarea>           
-                             
+          <!-- time of day row aside -->
           <aside class="timeOfDay">
             <div class="hour" id="hour-9">9am</div>
             <div class="hour" id="hour-10">10am</div>
@@ -78,7 +80,7 @@
             <div class="hour" id="hour-16">4pm</div>
             <div class="hour" id="hour-17">5pm</div>
             <div class="hour" id="hour-18">6pm</div>
-            <div class="hour"></div>
+            
           </aside>
         </div>
       </div>

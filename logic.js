@@ -8,9 +8,9 @@ var hour = today.format("H");
 $("#currentDay").text(today.format("dddd, MMMM Do"));
 
 // displays the day of the week above the calendar
-$(".curDate").text(today.format("dddd"));
+$(".curDay").text(today.format("dddd"));
 
-console.log(hour);
+// console.log(hour);
 
 // this will allow me to change the background color based on the time
 $(".row").each(function(){
@@ -31,7 +31,7 @@ $(this).addClass("present");
   // console.log(rowHour);
 });
 
-// Loads locally saved data for rows
+// Loads locally saved data for each unique row
 onload = function() {
 
   var text9 = localStorage.getItem("#row-9");
@@ -105,7 +105,7 @@ onload = function() {
          };
   }
 
-// Getting text in rows to save to local storage
+// Getting text in each unique rows to save to local storage
 
 $("#09").on("click", function(event){
   event.preventDefault();
@@ -116,9 +116,9 @@ $("#09").on("click", function(event){
 
   var data9 = JSON.stringify(todoItem9);
 
-  var getData9 = localStorage.setItem("#row-9", data9);
+  localStorage.setItem("#row-9", data9);
 
-  console.log(data9);
+  // console.log(data9);
   
 });
 
@@ -133,9 +133,9 @@ $("#09").on("click", function(event){
   
     var data10 = JSON.stringify(todoItem10);
   
-    var getData10 = localStorage.setItem("#row-10", data10);
+    localStorage.setItem("#row-10", data10);
   
-    console.log(data10);
+    // console.log(data10);
     
   });
   
@@ -150,9 +150,9 @@ $("#11").on("click", function(event){
 
   var data11 = JSON.stringify(todoItem11);
 
-  var getData11 = localStorage.setItem("#row-11", data11);
+  localStorage.setItem("#row-11", data11);
 
-  console.log(data11);
+  // console.log(data11);
   
 });
 
@@ -167,9 +167,9 @@ $("#12").on("click", function(event){
 
   var data12 = JSON.stringify(todoItem12);
 
-  var getData12 = localStorage.setItem("#row-12", data12);
+  localStorage.setItem("#row-12", data12);
 
-  console.log(data12);
+  // console.log(data12);
   
 });
 
@@ -184,9 +184,9 @@ $("#13").on("click", function(event){
 
   var data13 = JSON.stringify(todoItem13);
 
-  var getData13 = localStorage.setItem("#row-13", data13);
+  localStorage.setItem("#row-13", data13);
 
-  console.log(data13);
+  // console.log(data13);
   
 });
 
@@ -201,9 +201,9 @@ $("#14").on("click", function(event){
 
   var data14 = JSON.stringify(todoItem14);
 
-  var getData14 = localStorage.setItem("#row-14", data14);
+  localStorage.setItem("#row-14", data14);
 
-  console.log(data14);
+  // console.log(data14);
   
 });
 
@@ -218,9 +218,9 @@ $("#15").on("click", function(event){
 
   var data15 = JSON.stringify(todoItem15);
 
-  var getData15 = localStorage.setItem("#row-15", data15);
+  localStorage.setItem("#row-15", data15);
 
-  console.log(data15);
+  // console.log(data15);
   
 });
 
@@ -235,9 +235,9 @@ $("#16").on("click", function(event){
 
   var data16 = JSON.stringify(todoItem16);
 
-  var getData16 = localStorage.setItem("#row-16", data16);
+  localStorage.setItem("#row-16", data16);
 
-  console.log(data16);
+  // console.log(data16);
   
 });
 
@@ -252,9 +252,9 @@ $("#17").on("click", function(event){
 
   var data17 = JSON.stringify(todoItem17);
 
-  var getData17 = localStorage.setItem("#row-17", data17);
+  localStorage.setItem("#row-17", data17);
 
-  console.log(data17);
+  // console.log(data17);
   
 });
 
@@ -269,8 +269,8 @@ $("#18").on("click", function(event){
 
   var data18 = JSON.stringify(todoItem18);
 
-  var getData18 = localStorage.setItem("#row-18", data18);
+  localStorage.setItem("#row-18", data18);
 
-  console.log(data18);
+  // console.log(data18);
   
 });

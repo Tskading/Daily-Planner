@@ -2,6 +2,8 @@ body {
     font-family: 'Titillium Web', sans-serif;
     font-size: 16px;
     line-height: 1;
+    background-image: url("https://cdn.pixabay.com/photo/2014/08/01/00/08/pier-407252_960_720.jpg");
+    background-size: cover;
   }
   textarea{
     background: transparent;
@@ -18,7 +20,7 @@ body {
     border-radius: 0;
     border-bottom: 10px solid black;
   }
-  .curDate {
+  .curDay {
     border-radius: 15;
     background-color: #a2d2ff;
     width: 165px;
@@ -45,7 +47,7 @@ body {
   
   }
   .hour {
-    background-color: #ffffff;
+    background-color: transparent;
     color: #000000;
     border-top: 1px dashed #000000;
     text-align: center;
@@ -62,11 +64,11 @@ body {
   }
   .present {
     background-color: #bdb2ff;
-    color: white;
+    color: black;
   }
   .future {
     background-color: #77dd77;
-    color: white;
+    color: black;
   }
   .saveBtn {
     border-top: #000000 2px solid;
@@ -89,4 +91,8 @@ body {
     border-radius: 12%;
     background-color: #06AED5;
     margin-left:100px;
+  }
+
+  .saveBtn:hover {
+opacity: 70%;
   }
